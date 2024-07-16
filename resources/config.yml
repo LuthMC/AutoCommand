@@ -1,0 +1,10 @@
+commands:
+  - enabled: true
+    command: "say Hello, world!"
+    interval: 5 # in minutes
+  - enabled: false
+    command: "say Another command!"
+    interval: 10
+  - enabled: true
+    command: "say Github: LuthMC"
+    interval: 15
