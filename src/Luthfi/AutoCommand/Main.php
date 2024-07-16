@@ -15,7 +15,7 @@ class Main extends PluginBase {
             if ($commandConfig["enabled"]) {
                 $command = $commandConfig["command"];
                 $interval = $commandConfig["interval"] * 60 * 20;
-                $this->getScheduler()->scheduleRepeatingTask(new AutoCommandTask($this, $command), $interval);
+                $this->getScheduler()->scheduleRepeatingTask(new AutoCommandTask($command), $interval);
             }
         }
     }
